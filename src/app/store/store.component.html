@@ -13,15 +13,15 @@
   </button>
 </div>
 
-<div class="col-xs-9 p-a-1">
-  <div *ngFor="let product of products" class="card card-outline-primary">
-    <h4 class="card-header">
-      {{product.name}}
-      <span class="pull-xs-right tag tag-pill tag-primary">
-        {{product.price | currency: "USD":true:"2.2-2"}}
-      </span>
-    </h4>
-    <div class="card-text p-a-1">{{product.description}}</div>
+  <div class="col-xs-9 p-a-1">
+    <div *ngFor="let product of products" class="card card-outline-primary">
+      <h4 class="card-header">
+        {{product.name}}
+        <span class="pull-xs-right tag tag-pill tag-primary">
+          {{product.price | currency: "USD":true:"2.2-2"}}
+        </span>
+      </h4>
+      <div class="card-text p-a-1">{{product.description}}</div>
   </div>
 
   <div class="form-inline pull-xs-left m-r-1">
